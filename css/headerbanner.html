@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%
+        }
+
+        .headericons {
+            width: 2%;
+            height: 100vh;
+
+
+
+
+
+
+        }
+
+        #icons {
+            margin-top: 10vw;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .headericons a {
+            margin: 15px 0px;
+        }
+
+        .headericons a:last-child {
+            writing-mode: vertical-rl;
+            text-decoration: none;
+            transform: rotate(180deg);
+            font-size: 0.9vw;
+            color: #000;
+            font-weight: 900;
+            padding-right: 10px;
+            text-align: center;
+
+
+
+        }
+
+        .headerdata {
+            width: 97%;
+            background-color: #c6cbce;
+
+            display: flex;
+        }
+
+        .imgarea {
+            width: 50%;
+        }
+
+        .contantarea {
+            width: 50%;
+            position: relative;
+        }
+
+
+        .arrow {
+            position: absolute;
+            top: 1vw;
+            right: 4vw;
+
+        }
+
+        .prevarrow {
+            position: relative;
+            right: 0;
+            top: 0;
+        }
+
+        .arrowcontantpre,
+        .arrowcontantpre {
+            position: relative;
+
+        }
+
+        .arrowcontantpre p {
+            position: absolute;
+            font-size: 13px;
+            color: #fff;
+            letter-spacing: 2px;
+            top: -8px;
+        }
+
+        .nextarrow {
+            position: absolute;
+            top: 40px;
+            right: 0;
+        }
+
+        .arrowcontantnext p {
+            position: absolute;
+            font-size: 13px;
+            color: #000;
+            letter-spacing: 2px;
+            top: -8px;
+
+        }
+
+
+        .summerarea {
+            width: 80%;
+            margin-top: 8vw;
+            position: relative;
+        }
+
+        .summerarea h1 {
+            font-size: 6vw;
+        }
+
+        .menswear {
+            font-size: 1vw;
+        }
+
+        .menswear span:first-child {
+            margin-right: 20px;
+            font-weight: bold;
+
+        }
+
+
+        .icons3 {
+            display: flex;
+            width: 130px;
+            justify-content: space-between;
+            margin-top: 20px;
+
+
+
+        }
+
+        .icons3 a {
+            display: flex;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            margin: 14PX 0px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            font-size: 10px;
+            align-items: center;
+            text-decoration: none;
+
+        }
+
+        .icons3 a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+
+
+        .fa-solid {
+            color: #fff;
+
+        }
+
+        .hadertext {
+            width: 250px;
+            text-align: justify;
+            margin-top: 30px;
+        }
+
+        .headerbtn {
+            margin-top: 40px;
+            width: 110px;
+        }
+
+        .headerbtn button {
+            padding: 10px 25px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 25px;
+            font-size: 10px;
+        }
+
+        .headerbtn button:hover {
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+        }
+
+
+        .imgtextcontainer {
+            display: flex;
+            width: 35vw;
+            height: 400px;
+            /* background-color: yellowgreen; */
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .imgdive {
+            width: 30%;
+            background-image: url(/images/Untitled-1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .textdiv {
+            width: 70%;
+            background-image: url(/images/black-grey-background.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .textdiv {}
+
+        .textdivheader {
+            font-size: 2vw;
+            width: 239px;
+            margin-top: 40px;
+            margin-left: 45px;
+            font-weight: 900;
+        }
+
+        .black {
+            margin-left: 45px;
+            font-size: 1vw;
+            margin-top: 15px;
+
+        }
+
+
+        .textdivmiddlearea {
+            display: flex;
+            margin-left: 45px;
+            margin-top: 40px;
+            width: 240px;
+            justify-content: space-between;
+        }
+
+        .textdivmiddlearea p:first-child {
+            font-size: 1vw;
+            text-decoration: line-through;
+            width: 40px;
+
+        }
+
+        .textdivmiddlearea p:nth-child(2) {
+            font-size: 2vw;
+            font-weight: bolder;
+            width: 50px;
+            margin-right: 34px;
+        }
+
+        .textdivmiddlearea button {
+            width: 106px;
+            height: 39px;
+            border-radius: 20px;
+        }
+
+
+
+        .textdivcards {
+            display: flex;
+        }
+
+        .card {
+
+            background-color: #fff;
+            color: #000;
+            width: 70px;
+            height: 70px;
+
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/25bec86c33.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <div class="headericons">
+                <div id="icons">
+                    <a href="#"><img src="/images/facebook-icon.jpg" alt=""></a>
+                    <a href="#"><img src="/images/twitter-icon.jpg" alt=""></a>
+                    <a href="#"><img src="/images/google-icon.jpg" alt=""></a>
+                    <a href="#"><img src="/images/insta-icon.jpg" alt=""></a>
+                    <a href="#">FOLOLOW US</a>
+                </div>
+            </div>
+            <div class="headerdata">
+                <div class="imgarea"></div>
+                <div class="contantarea">
+                    <div>
+                        <div class="summerarea">
+                            <h1>SUMMER</h1>
+                            <H1>COLLECTION</H1>
+                            <div class="arrow">
+
+                                <div class="prevarrow">
+                                    <div class="arrowcontantpre">
+                                        <p>PREV</p>
+                                        <img src="/images/prev-arrow.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="nextarrow">
+                                    <div class="arrowcontantnext">
+                                        <p>NEXT</p>
+                                        <img src="/images/next-arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menswear">
+                            <span>01</span>
+                            <span>MEN'S WEAR</span>
+                        </div>
+
+                        <div class="icons3">
+                            <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-share-nodes"></i></a>
+
+                        </div>
+
+                        <div class="hadertext">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sint optio
+                                molestias consectetur ratione adipisci sit, omnis perferendis pariatur dolor!</p>
+                        </div>
+                        <div class="headerbtn">
+                            <button>Shop Now</button>
+                        </div>
+
+                    </div>
+
+                    <div class="imgtextcontainer">
+                        <div class="imgdive">
+
+                        </div>
+                        <div class="textdiv">
+                            <div class="textdivheader">
+                                <p>SPCIAL OFFER OF THE MONTH</p>
+                            </div>
+                            <P class="black">Black Long Sleeve</P>
+                            <div class="textdivmiddlearea">
+                                <p>$105</p>
+                                <p>$65</p>
+                                <button>Shop Now</button>
+                            </div>
+                            <div class="textdivcards">
+                                <div class="card">
+                                    <div>
+                                        <p>09</p>
+                                    </div>
+                                    <div>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div>
+                                        <p>HOURS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

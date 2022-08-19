@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .new {
+            margin: 50px 0px 0px 50px;
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .new p {
+            z-index: 1;
+        }
+
+        .new:before {
+            content: "";
+            position: absolute;
+            bottom: -34px;
+            left: 0;
+            height: 34px;
+            width: 24px;
+            border-top-left-radius: 60%;
+        }
+
+        .new:before {
+            box-shadow: 0px -20px 0 0 #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="newbox">
+        <div class="new">
+            <p>new</p>
+        </div>
+    </div>
+</body>
+
+</html>
