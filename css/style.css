@@ -2573,10 +2573,29 @@ footer {
 
 }
 
+.img1r2,
+.img1col1,
+.img2col1,
+.img1col3,
+.img2col3,
+.sec3box1,
+.sec3box2,
+.sec3box3,
+.sec4box1,
+.sec4box2,
+.sec4box3,
+.sec4box4,
+.sec6box1,
+.sec6box2 {
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
 
 
-
-
+html {
+    scroll-behavior: smooth;
+}
 
 
 .img1r2:hover,
@@ -2594,10 +2613,13 @@ footer {
 .sec6box1:hover,
 .sec6box2:hover {
     cursor: pointer;
+    opacity: 0.5;
+    z-index: 10;
 
 
-    margin-top: -50px;
-    box-shadow: 0px 0px 3px 3px #afafaf;
+    margin-top: -10px;
+
+    /* box-shadow: 0px 0px 3px 3px #afafaf; */
 }
 
 .fotrsec1 p:hover {
