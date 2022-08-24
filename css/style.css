@@ -72,6 +72,10 @@ body {
     position: relative;
 }
 
+.navbarmenu ul li a:hover {
+    font-weight: bold;
+}
+
 .navbarmenu ul li a:after {
     content: '';
     position: absolute;
@@ -105,6 +109,12 @@ body {
 
 .navbaricons ul li a img {
     size: 1px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbaricons ul li a img:hover {
+    transform: scale(1.4);
 }
 
 
@@ -120,7 +130,8 @@ body {
 
 .hicons {
     width: 4%;
-    height: 100vh;
+    height: 49vw;
+    background-color: #ededed;
 }
 
 .icons {
@@ -162,6 +173,7 @@ body {
 
 .leftarea {
     width: 50%;
+
 }
 
 .rightarea {
@@ -235,10 +247,13 @@ body {
 
 .icons3 {
     display: flex;
-    width: 115px;
+    width: 10vw;
     justify-content: space-between;
-    margin-top: 5px;
-
+    /* padding-top: 10vw; */
+    position: relative;
+    top: 2.5vw;
+    padding-right: 11px;
+    z-index: 5;
 
 
 }
@@ -246,25 +261,30 @@ body {
 .icons3 a {
     display: flex;
     justify-content: center;
-    width: 30px;
-    height: 30px;
-    margin: 12PX 0px;
+    width: 2vw;
+    height: 2vw;
+    /* margin: 12PX 0px; */
     border: 1px solid #000;
     border-radius: 50%;
-    font-size: 10px;
+    font-size: 1vw;
     align-items: center;
     text-decoration: none;
-
+    color: #000;
 }
+
+/* #iconblack {
+    color: #000;
+} */
 
 .icons3 a:hover {
     background-color: #000;
     color: #fff;
+    cursor: pointer;
 }
 
-.fa-solid {
+/* .fa-solid {
     color: #fff;
-}
+} */
 
 .hadertextdiv {
     width: 100%;
@@ -274,9 +294,9 @@ body {
 }
 
 .hadertext {
-    width: 30%;
+    width: 27%;
     text-align: justify;
-    padding-top: 30px;
+    padding-top: 5vw;
 }
 
 .hadertext p {
@@ -466,7 +486,9 @@ main {
     position: relative;
     font-size: 1.2vw;
 
+
 }
+
 
 .navigation a:after {
     content: '';
@@ -720,13 +742,16 @@ main {
 }
 
 .sec2btn {
-    padding: 15px 30px;
-    border-radius: 20px;
+    padding: 1vw 2vw;
+    border-radius: 4vw;
     margin-top: 2vw;
     outline: none;
     border: none;
-    font-size: 0.8vw;
-    letter-spacing: 2px;
+    font-size: 0.7vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #fff;
+    color: #606060;
 }
 
 .sec2btn:hover {
@@ -911,7 +936,15 @@ main {
     border-radius: 50%;
     border: 1px solid #c6cbce;
     cursor: pointer;
+    transition: all .2s linear;
 
+}
+
+.right:hover,
+.left:hover {
+    /* width: 50px;
+    height: 50px; */
+    border: 2px solid #000;
 }
 
 .right img,
@@ -1066,12 +1099,12 @@ main {
 
 .sec5btn {
     margin-top: 1.5vw;
-    padding: 1vw 2vw;
+    padding: 1.5vw 2.5vw;
     background-color: #000;
     color: #fff;
-    font-size: 0.7vw;
+    font-size: 1vw;
     border: none;
-    border-radius: 25px;
+    border-radius: 6vw;
 }
 
 .sec5btn:hover {
@@ -1125,7 +1158,15 @@ main {
     border-radius: 50%;
     border: 1px solid #c6cbce;
     cursor: pointer;
+    transition: all 0.2s linear;
 
+}
+
+.sec6right:hover,
+.sec6left:hover {
+    /* width: 50px;
+    height: 50px; */
+    border: 2px solid #000;
 }
 
 .sec6right img,
@@ -1153,7 +1194,7 @@ main {
 .sec6textbox1,
 .sec6textbox2 {
     width: 90%;
-    height: 6vw;
+    height: 4vw;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
@@ -1189,14 +1230,14 @@ main {
 
 
 footer {
-    height: 26vw;
+    height: 20vw;
 }
 
 .upperarea {
     width: 100%;
     background-color: #f8f8f8;
     padding-top: 11vw;
-    padding-bottom: 70px;
+    padding-bottom: 3vw;
     z-index: 0;
     position: relative;
     top: -9vw;
@@ -1272,7 +1313,7 @@ footer {
 
 .lowerarea {
     width: 65%;
-    margin: 20px auto 0 auto;
+    margin: 3px auto 0 auto;
     text-align: center;
 
 }
@@ -1382,7 +1423,7 @@ footer {
 
     .rightarea {
         width: 100%;
-        height: 75vw;
+        height: 70vw;
         position: relative;
 
     }
@@ -1433,7 +1474,7 @@ footer {
     }
 
     .menswear {
-        font-size: 2.7vw;
+        font-size: 3vw;
         padding-left: 20px;
         position: absolute;
         margin: 0;
@@ -1450,6 +1491,7 @@ footer {
         width: 6.5vw;
         height: 6.5vw;
         font-size: 3vw;
+        top: 1.5vw;
 
     }
 
@@ -1460,7 +1502,7 @@ footer {
     .hadertext {
         width: 28%;
         padding-left: 20px;
-        margin-top: 3vw;
+        margin-top: 4vw;
         padding-top: 0px;
     }
 
@@ -2104,12 +2146,14 @@ footer {
     }
 
     .icons3 {
-        width: 35%;
+        width: 100%;
+        justify-content: center;
         text-align: center;
-        margin-left: 0;
-        margin-top: 2vw;
-        margin: 0 auto;
+        gap: 4vw;
+        margin: 0 0 6vw 0;
+
     }
+
 
     .hadertext {
         width: 100%;
@@ -2587,8 +2631,14 @@ footer {
 .sec4box4,
 .sec6box1,
 .sec6box2 {
-    transition-property: all;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out 0.2s;
+
+
+
+    /* transition-property: all;
     transition-duration: 0.5s;
+    transition-timing-function: linear; */
 
 }
 
@@ -2613,11 +2663,15 @@ html {
 .sec6box1:hover,
 .sec6box2:hover {
     cursor: pointer;
-    opacity: 0.5;
+
+    transform: scale(1.1);
+    opacity: .9;
+
+    /* opacity: 0.5;
     z-index: 10;
 
 
-    margin-top: -10px;
+    margin-top: -10px; */
 
     /* box-shadow: 0px 0px 3px 3px #afafaf; */
 }
